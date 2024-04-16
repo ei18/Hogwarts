@@ -1,0 +1,130 @@
+body{
+    background-image: url(./castilloHogwarts.jpg);
+    height: auto;
+    background-size: 100%;
+    font-family: 'Harry Potter', sans-serif;
+}
+
+.avatar{
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+h2{
+    font-size: 50px;
+    font-family: 'Harry Potter', sans-serif;
+    color: white;
+}
+
+label{
+    font-size: 20px;
+    color: white;
+}
+
+.respuesta{
+    text-align: center;
+    font-family: 'Harry Potter', sans-serif;
+}
+
+input{
+    background-color: rgba(0, 0, 0, 0.165);
+    color: white;
+}
+
+button{
+    background-color: rgba(255, 255, 255, 0.321);
+}
+
+::placeholder{
+    color: white;
+}
+
+.linaje{
+    background-color: rgba(255, 255, 255, 0.321);
+    color: white;
+    text-align: center;
+}
+
+.cualidad{
+    background-color: rgba(255, 255, 255, 0.321);
+    color: white;
+    text-align: center;    
+}
+
+option{
+    background-color: rgba(0, 0, 0, 0.227);
+    color: white;
+}
+
+#respuestaFormulario{
+    color: white;
+}
+
+.button-inicio{
+    background-color: rgba(255, 255, 255, 0.321);
+}
+
+.button-cena{
+    background-color: rgba(255, 255, 255, 0.321);
+}
+
+.formulario{
+    border:  solid 2px;
+}
+
+.container{
+    border: solid 2px;
+    background-color: rgba(255, 255, 255, 0.321);
+    margin: 5rem;
+    padding: 5rem;
+}
+
+#nombre{
+    width: 20rem;
+    text-align: center;  
+}
+
+#edad{
+    width: 20rem;
+    text-align: center;
+}
+
+#familia{
+    width: 20rem;
+    text-align: center;
+}
+
+#linaje{
+    width: 20.5rem;
+    text-align: center;
+}
+
+#casa{
+    width: 20rem;
+    text-align: center;
+}
+
+#animalPatronus{
+    width: 20rem;
+    text-align: center;
+}
+
+#cualidades{
+    width: 20.5rem;
+    text-align: center;
+}
+
+#respuestaFormulario{
+    border: solid 2px;
+    background-color: rgba(255, 255, 255, 0.321);
+    margin: 5rem;
+    padding: 5rem;
+}
+

@@ -1,0 +1,37 @@
+body{
+    background-image: url(./cenaa.gif);
+    height: auto;
+    background-size: 120rem;
+}
+
+h1{
+    font-size: 50px;
+    font-family: 'Harry Potter', sans-serif;
+    color: black;
+    text-align: center;
+}
+
+.button-inicio{
+    background-color: rgba(255, 255, 255, 0.321);
+}
+
+.button-transformacion{
+    background-color: rgba(255, 255, 255, 0.321);
+}
+
+.container{
+    border: solid 2px;
+    background-color: rgba(255, 255, 255, 0.321);
+    margin: 5rem;
+    padding: 4rem;
+    font-family: 'Harry Potter', sans-serif;
+}
+
+strong{
+    font-family: 'Harry Potter', sans-serif;
+}
+
+.logo{
+    width: 15%;
+    height: 10%;
+}

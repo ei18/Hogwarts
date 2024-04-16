@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogwarts</title>
+    <link rel="stylesheet" href="./1.css">
+    <script src="./1.js"></script>
+</head>
+<body>
+    <link href="https://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
+
+   <header>
+    <div class="inicio"></div>
+   </header>
+
+    <div class="container">
+        <form action="">
+        <h2>Formulario de Ingreso a Hogwarts</h2>
+        <br>
+        <img class="avatar" src="./avatar2.jpeg" alt="">
+        <br>
+        <label for="">Nombre</label>
+        <input type="text" nombre="nombre" id="nombre" placeholder="Gin">
+        <br>
+        <label for="">Edad</label>
+        <input type="text" nombre="edad" id="edad" placeholder="12">
+        <br>
+        <label for="">Familia</label>
+        <input type="text" nombre="familia" id="familia" placeholder="Carrow">
+        <br>
+        <label for="">Linaje</label>
+        <select class="linaje" name="linaje" id="linaje">
+            <option value="">Selecciona tu linaje</option>
+            <option value="mestizo">Mestizo</option>  
+            <option value="muggle">Muggle</option>
+            <option value="sangre pura">Sangre Pura</option>            
+        </select>
+        <br>
+        <label for="">Casa</label>
+        <input type="text" nombre="casa" id="casa" placeholder="Aún no te asignan casa">
+        <br>
+        <label for="">Animal Patronus</label>
+        <input type="text" nombre="animal patronus" id="animalPatronus" placeholder="No tienes animal patronus">
+        <br>
+        <label for="">Cualidades</label>
+        <select class="cualidad" name="cualidades" id="cualidades">
+            <option value="">Selecciona tus cualidades</option>
+            <option value="Valor, Fuerza, Audacia">Valor, Fuerza, Audacia</option>
+            <option value="Justicia, Lealtad, Paciencia">Justicia, Lealtad, Paciencia</option>
+            <option value="Creatividad, Erudición, Inteligencia">Creatividad, Erudición, Inteligencia</option>
+            <option value="Ambición, Determinación, Astucia">Ambición, Determinación, Astucia</option>
+        </select> 
+        <br>
+        <button class="btnEnviar" type="button" onclick="guardarFormulario()"> Enviar </button>
+    </form>
+</div>
+    <hr>
+    <div class="respuesta" id="respuestaFormulario">REGISTRO</div>
+    <script>
+        let contenido = document.getElementById("2");
+        console.log(contenido);
+        function mostrar_contenido(params) {
+            contenido = document.getElementById("2").value;
+            console.log(contenido);
+            document.getElementById("2").value = "nuevo valor";
+            document.getElementById("2").style.background = "blue";
+
+            document.getElementById("1").innerHTML = contenido;
+        }
+    
+        function guardarFormulario(inputs){
+            let formulario = document.getElementById("nombre").value, formulario2 = document.getElementById("edad").value, formulario3 = document.getElementById("familia").value, formulario4 = document.getElementById("linaje").value, formulario5 = document.getElementById("casa").value, formulario6 = document.getElementById("animalPatronus").value, formulario7 = document.getElementById("cualidades").value;
+            
+            document.getElementById("respuestaFormulario").innerHTML = `
+            <h2>Información del Estudiante</h2>
+            <p><strong>Nombre:</strong> ${estudiante.nombre}
+            <p><strong>Edad:</strong> ${estudiante.edad}
+            <p><strong>Familia:</strong> ${estudiante.familia}
+            <p><strong>Linaje:</strong> ${estudiante.linaje} 
+            <p><strong>Cualidades:</strong> ${estudiante.cualidades}
+            `;
+        }
+    </script> 
+    
+<div class="casa-container"></div>
+<form action="./1.html">
+    <button type="submit" class="button-inicio">Inicio</button>
+</form>
+
+<form action="./2.html">
+    <button type="submit" class="button-cena">Cena</button>
+</form>
+
+
+    <script src="./1.js"> </script>
+    <script src="./2.js"></script>
+
+</body>
+</html>
